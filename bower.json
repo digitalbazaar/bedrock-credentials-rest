@@ -1,0 +1,18 @@
+{
+  "name": "bedrock-credentials-rest",
+  "version": "0.0.1-dev",
+  "main": ["./components/credentials-rest.js"],
+  "moduleType": ["amd"],
+  "ignore": [
+    "bedrock",
+    "bedrock.json",
+    "lib",
+    "node_modules",
+    "package.json"
+  ],
+  "dependencies": {
+    "bedrock-angular": "^1.0.0",
+    "bedrock-angular-credential": "^0.0.0",
+    "bedrock-angular-resource": "^1.0.1"
+  }
+}

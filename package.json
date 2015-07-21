@@ -26,12 +26,17 @@
   "homepage": "https://github.com/digitalbazaar/bedrock-credentials-rest",
   "dependencies": {
     "async": "~0.9.0",
+    "cors": "^2.7.1",
     "lodash": "^3.9.0"
   },
   "peerDependencies": {
     "bedrock": "^1.0.0",
+    "bedrock-credentials-mongodb": "^0.0.1",
+    "bedrock-docs": "^1.0.0",
+    "bedrock-passport": "^1.0.0",
     "bedrock-permission": "^1.0.0",
-    "bedrock-credentials-mongodb": "^1.0.0"
+    "bedrock-rest": "^1.0.0",
+    "bedrock-validation": "^1.0.0"
   },
   "directories": {
     "lib": "./lib"
