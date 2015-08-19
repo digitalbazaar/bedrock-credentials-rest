@@ -18,49 +18,6 @@ function factory(
   self.modals = {};
 
   self.credential = null;
-  // FIXME: temporary static groups
-  self.groups =
-[
-  {
-    "id": "EmailCredential",
-    "type": "PropertyGroup",
-    "label": "Verified Email",
-    "layout": [
-      {
-        "property": {
-          "id": "claim",
-          "type": "Property",
-          "label": "Claim",
-          "range": "URL",
-          "collapsed": true
-        },
-        "propertyGroup": {
-          "id": "EmailClaimPropertyGroup",
-          "type": "PropertyGroup",
-          "collapsed": true,
-          "layout": [
-            {
-              "property": {
-                "id": "email",
-                "type": "Property",
-                "label": "Email Address",
-                "range": "String"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "property": {
-          "id": "issued",
-          "type": "Property",
-          "label": "Date Issued",
-          "range": "String"
-        }
-      }
-    ]
-  }
-];
   self.allPublic = false;
   self.loading = true;
 
