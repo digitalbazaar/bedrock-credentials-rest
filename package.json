@@ -31,7 +31,7 @@
   },
   "peerDependencies": {
     "bedrock": "^1.0.0",
-    "bedrock-credentials-mongodb": "^0.0.1",
+    "bedrock-credentials-mongodb": "digitalbazaar/bedrock-credentials-mongodb#master",
     "bedrock-docs": "^1.0.0",
     "bedrock-passport": "^1.0.0",
     "bedrock-permission": "^1.0.0",
