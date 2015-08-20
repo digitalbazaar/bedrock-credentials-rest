@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "bedrock-angular": "^1.0.0",
-    "bedrock-angular-credential": "^0.0.0",
-    "bedrock-angular-resource": "^1.0.1"
+    "bedrock-angular-credential": "digitalbazaar/bedrock-angular-credential#master",
+    "bedrock-angular-resource": "digitalbazaar/bedrock-angular-resource#master"
   }
 }
