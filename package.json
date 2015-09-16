@@ -32,6 +32,7 @@
     "bedrock": "^1.0.0",
     "bedrock-credentials-mongodb": "digitalbazaar/bedrock-credentials-mongodb#master",
     "bedrock-docs": "^1.0.0",
+    "bedrock-mongodb": "^1.0.0",
     "bedrock-passport": "digitalbazaar/bedrock-passport#2.x",
     "bedrock-permission": "^1.0.0",
     "bedrock-rest": "^1.0.0",
