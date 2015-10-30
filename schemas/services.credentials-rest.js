@@ -29,7 +29,7 @@ var postCredential = {
       title: 'Credential state',
       description: 'The state to set on the credential.',
       type: 'string',
-      enum: ['claimed']
+      enum: ['claimed', 'rejected']
     },
     revoked: {
       required: false
