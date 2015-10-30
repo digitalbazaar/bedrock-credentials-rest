@@ -22,11 +22,18 @@ var postCredential = {
   type: 'object',
   title: 'POST credential',
   properties: {
-    '@context': schemas.jsonldContext([
-        constants.IDENTITY_CONTEXT_V1_URL,
-        constants.CREDENTIALS_CONTEXT_V1_URL
-    ]),
+    '@context': schemas.jsonldContext(constants.IDENTITY_CONTEXT_V1_URL),
     id: schemas.identifier(),
+    sysState: {
+      required: false,
+      title: 'Credential state',
+      description: 'The state to set on the credential.',
+      type: 'string',
+      enum: ['claimed']
+    },
+    revoked: {
+      required: false
+    },
     sysPublic: {
       required: false,
       title: 'Credential visibility.',
