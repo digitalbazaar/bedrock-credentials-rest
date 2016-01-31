@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## [1.0.0] - 2016-01-31
+## [0.1.0] - 2016-01-31
 
 ### Added
 - Credentials services.
