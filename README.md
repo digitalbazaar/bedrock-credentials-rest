@@ -10,6 +10,10 @@ a full URL id. The ID would have to be a URL encoded path parameter. The
 alternate approach user here is to use the `id` query parameter when referring
 to a credential by ID.
 
+## Requirements
+
+- npm v3+
+
 ## Quick Examples
 
 ```
