@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [0.2.0] - 2016-03-03
+
+### Changed
+- Update package dependencies for npm v3 compatibility.
+
 ## [0.1.1] - 2016-02-05
 
 ### Fixed
@@ -16,6 +21,7 @@
 ### Changed
 - See git history for changes.
 
-[Unreleased]: https://github.com/digitalbazaar/bedrock-credentials-rest/compare/0.1.1...HEAD
+[Unreleased]: https://github.com/digitalbazaar/bedrock-credentials-rest/compare/0.2.0...HEAD
+[0.2.0]: https://github.com/digitalbazaar/bedrock-credentials-rest/compare/0.1.1...0.2.0
 [0.1.1]: https://github.com/digitalbazaar/bedrock-credentials-rest/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/digitalbazaar/bedrock-credentials-rest/compare/0.0.0...0.1.0
