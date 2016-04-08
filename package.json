@@ -4,7 +4,7 @@
   "description": "A RESTful API for credentials storage",
   "main": "./lib/api",
   "scripts": {
-    "test": "node test.js"
+    "test": "node bedrock/test.js test"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,10 @@
   "homepage": "https://github.com/digitalbazaar/bedrock-credentials-rest",
   "dependencies": {
     "async": "^1.4.2",
-    "cors": "^2.7.1"
+    "cors": "^2.7.1",
+    "lodash": "^4.8.2",
+    "node-uuid": "^1.4.7",
+    "request": "^2.70.0"
   },
   "peerDependencies": {
     "bedrock": "^1.0.0",
