@@ -86,7 +86,7 @@ describe('bedrock-credentials-rest queries', function() {
     describe('admin user', function() {
       var user = mockData.identities.adminUser;
 
-      describe('custom parameter includes "limit"', function() {
+      describe('filter parameter includes "limit"', function() {
         it('returns ten credentials', function(done) {
           paramTest({
             count: 15, expectCount: 10, param: 'limit', value: '10', user: user,
@@ -105,42 +105,42 @@ describe('bedrock-credentials-rest queries', function() {
             control: {insert: false}
           }, done);
         });
-      }); // custom parameter includes "claimed"
+      }); // filter parameter includes "claimed"
 
-      describe('custom parameter includes "claimed"', function() {
+      describe('filter parameter includes "claimed"', function() {
         it('returns a single claimed credential', function(done) {
           paramTest({
-            count: 1, param: 'custom', value: 'claimed', user: user
+            count: 1, param: 'filter', value: 'claimed', user: user
           }, done);
         });
         it('returns three claimed credentials', function(done) {
           paramTest({
-            count: 3, param: 'custom', value: 'claimed', user: user
+            count: 3, param: 'filter', value: 'claimed', user: user
           }, done);
         });
         it('returns ten claimed credentials', function(done) {
           paramTest({
-            count: 10, param: 'custom', value: 'claimed', user: user
+            count: 10, param: 'filter', value: 'claimed', user: user
           }, done);
         });
-      }); // custom parameter includes "claimed"
-      describe('custom parameter includes "unclaimed"', function() {
+      }); // filter parameter includes "claimed"
+      describe('filter parameter includes "unclaimed"', function() {
         it('returns a single unclaimed credential', function(done) {
           paramTest({
-            count: 1, param: 'custom', value: 'unclaimed', user: user
+            count: 1, param: 'filter', value: 'unclaimed', user: user
           }, done);
         });
         it('returns three unclaimed credentials', function(done) {
           paramTest({
-            count: 3, param: 'custom', value: 'unclaimed', user: user
+            count: 3, param: 'filter', value: 'unclaimed', user: user
           }, done);
         });
         it('returns ten unclaimed credentials', function(done) {
           paramTest({
-            count: 10, param: 'custom', value: 'unclaimed', user: user
+            count: 10, param: 'filter', value: 'unclaimed', user: user
           }, done);
         });
-      }); // custom parameter includes "unclaimed"
+      }); // filter parameter includes "unclaimed"
       describe('query includes issuer', function() {
         it('returns a single credential', function(done) {
           paramTest({count: 1, param: 'issuer', user: user}, done);
@@ -152,7 +152,7 @@ describe('bedrock-credentials-rest queries', function() {
           paramTest({count: 10, param: 'issuer', user: user}, done);
         });
       }); // query includes issuer
-      describe.only('query includes sort', function() {
+      describe('query includes sort', function() {
         it('returns credentials sorted by issuer(asc)', function(done) {
           var testValues;
           async.auto({
@@ -337,7 +337,7 @@ describe('bedrock-credentials-rest queries', function() {
             query: ['insert', function(callback) {
               var clonedUrlObj = util.clone(urlObj);
               clonedUrlObj.query = {
-                custom: 'claimed',
+                filter: 'claimed',
                 issuer: testIssuer
               };
               request.get(
@@ -376,7 +376,7 @@ describe('bedrock-credentials-rest queries', function() {
             query: ['insert', function(callback) {
               var clonedUrlObj = util.clone(urlObj);
               clonedUrlObj.query = {
-                custom: 'claimed',
+                filter: 'claimed',
                 issuer: testIssuer
               };
               request.get(
@@ -415,7 +415,7 @@ describe('bedrock-credentials-rest queries', function() {
             query: ['insert', function(callback) {
               var clonedUrlObj = util.clone(urlObj);
               clonedUrlObj.query = {
-                custom: 'claimed',
+                filter: 'claimed',
                 issuer: testIssuer
               };
               request.get(
@@ -492,7 +492,7 @@ function paramTest(options, callback) {
   };
   async.auto({
     insert: function(callback) {
-      if(options.param !== 'custom') {
+      if(options.param !== 'filter') {
         testOptions[options.param] = testValue;
       } else {
         var paramObj = {
@@ -505,8 +505,8 @@ function paramTest(options, callback) {
             control: {sysState: 'claimed'}
           }
         };
-        var customParams = [].concat(testValue);
-        customParams.forEach(function(param) {
+        var filterParams = [].concat(testValue);
+        filterParams.forEach(function(param) {
           if(param in paramObj) {
             _.assign(testOptions, paramObj[param].test);
             _.assign(controlOptions, paramObj[param].control);
