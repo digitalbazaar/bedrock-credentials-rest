@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [0.3.3] - 2016-04-29
+
 ## [0.3.2] - 2016-04-29
 
 ## [0.3.1] - 2016-04-29
@@ -47,7 +49,8 @@
 ### Changed
 - See git history for changes.
 
-[Unreleased]: https://github.com/digitalbazaar/bedrock-credentials-rest/compare/0.3.2...HEAD
+[Unreleased]: https://github.com/digitalbazaar/bedrock-credentials-rest/compare/0.3.3...HEAD
+[0.3.3]: https://github.com/digitalbazaar/bedrock-credentials-rest/compare/0.3.2...0.3.3
 [0.3.2]: https://github.com/digitalbazaar/bedrock-credentials-rest/compare/0.3.1...0.3.2
 [0.3.1]: https://github.com/digitalbazaar/bedrock-credentials-rest/compare/0.3.0...0.3.1
 [0.3.0]: https://github.com/digitalbazaar/bedrock-credentials-rest/compare/0.2.2...0.3.0
