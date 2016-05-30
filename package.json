@@ -1,6 +1,6 @@
 {
   "name": "bedrock-credentials-rest",
-  "version": "0.3.5-dev",
+  "version": "1.0.0",
   "description": "A RESTful API for credentials storage",
   "main": "./lib/api",
   "scripts": {
