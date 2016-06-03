@@ -1,5 +1,10 @@
 # bedrock-credentials-rest ChangeLog
 
+## 1.0.1 - 2016-06-03
+
+### Added
+- Add CORS middleware to credential handler.
+
 ## 1.0.0 - 2016-05-30
 
 ### Added
