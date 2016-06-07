@@ -1,5 +1,8 @@
 # bedrock-credentials-rest ChangeLog
 
+### Changed
+- Update dependencies.
+
 ## 1.0.1 - 2016-06-03
 
 ### Added
