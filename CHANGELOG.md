@@ -1,5 +1,10 @@
 # bedrock-credentials-rest ChangeLog
 
+## 1.1.0 - 2016-06-29
+
+### Added
+- HTTP Delete endpoint.
+
 ## 1.0.2 - 2016-06-07
 
 ### Changed
