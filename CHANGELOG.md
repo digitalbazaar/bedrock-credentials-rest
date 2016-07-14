@@ -1,5 +1,10 @@
 # bedrock-credentials-rest ChangeLog
 
+## 1.1.1 - 2016-07-14
+
+### Changed
+- Simplify get credential handler.
+
 ## 1.1.0 - 2016-06-29
 
 ### Added
