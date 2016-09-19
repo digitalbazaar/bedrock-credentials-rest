@@ -1,5 +1,10 @@
 # bedrock-credentials-rest ChangeLog
 
+## 1.1.2 - 2016-09-19
+
+### Changed
+- Restructure test framework for CI.
+
 ## 1.1.1 - 2016-07-14
 
 ### Changed
