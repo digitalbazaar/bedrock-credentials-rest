@@ -1,21 +1,18 @@
 /*
  * Copyright (c) 2016 Digital Bazaar, Inc. All rights reserved.
  */
- /* globals describe, before, after, it, should, beforeEach, afterEach */
+ /* globals describe, before, after, it, should, beforeEach */
  /* jshint node: true */
 'use strict';
 
 var _ = require('lodash');
 var async = require('async');
 var bedrock = require('bedrock');
-var brKey = require('bedrock-key');
 var config = bedrock.config;
 var helpers = require('./helpers');
-var brIdentity = require('bedrock-identity');
-var database = require('bedrock-mongodb');
 var mockData = require('./mock.data');
 var store = require('bedrock-credentials-mongodb').provider;
-var uuid = require('node-uuid').v4;
+var uuid = require('uuid').v4;
 var url = require('url');
 var util = bedrock.util;
 var request = require('request');
@@ -154,7 +151,6 @@ describe('bedrock-credentials-rest queries', function() {
       }); // query includes issuer
       describe('query includes sort', function() {
         it('returns credentials sorted by issuer(asc)', function(done) {
-          var testValues;
           async.auto({
             insert: function(callback) {
               insertCredentials({count: 21}, callback);
@@ -180,7 +176,6 @@ describe('bedrock-credentials-rest queries', function() {
           }, done);
         });
         it('returns credentials sorted by issuer(desc)', function(done) {
-          var testValues;
           async.auto({
             insert: function(callback) {
               insertCredentials({count: 21}, callback);
@@ -207,7 +202,6 @@ describe('bedrock-credentials-rest queries', function() {
           }, done);
         });
         it('returns credentials sorted by subject(asc)', function(done) {
-          var testValues;
           async.auto({
             insert: function(callback) {
               insertCredentials({count: 21}, callback);
@@ -233,7 +227,6 @@ describe('bedrock-credentials-rest queries', function() {
           }, done);
         });
         it('returns credentials sorted by subject(desc)', function(done) {
-          var testValues;
           async.auto({
             insert: function(callback) {
               insertCredentials({count: 21}, callback);
@@ -260,7 +253,6 @@ describe('bedrock-credentials-rest queries', function() {
           }, done);
         });
         it('returns credentials sorted by issued(asc)', function(done) {
-          var testValues;
           async.auto({
             insert: function(callback) {
               insertCredentials({count: 21}, callback);
@@ -286,7 +278,6 @@ describe('bedrock-credentials-rest queries', function() {
           }, done);
         });
         it('returns credentials sorted by issued(desc)', function(done) {
-          var testValues;
           async.auto({
             insert: function(callback) {
               insertCredentials({count: 21}, callback);
