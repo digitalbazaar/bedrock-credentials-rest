@@ -1,6 +1,6 @@
 # bedrock-credentials-rest
 
-![build status](http://ci.digitalbazaar.com/buildStatus/icon?job=bedrock-credentials-rest)
+[![Build Status](http://ci.digitalbazaar.com/buildStatus/icon?job=bedrock-credentials-rest)](http://ci.digitalbazaar.com/job/bedrock-credentials-rest)
 
 A [bedrock][] module that implements a RESTful API for credential storage.
 
