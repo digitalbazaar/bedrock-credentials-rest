@@ -1,5 +1,8 @@
 # bedrock-credentials-rest ChangeLog
 
+### Changed
+- Update `bedrock-mongodb` peer dependency.
+
 ## 1.2.0 - 2017-04-13
 
 ### Added

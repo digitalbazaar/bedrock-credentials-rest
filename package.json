@@ -32,7 +32,7 @@
     "bedrock-credentials-mongodb": "^3.1.0",
     "bedrock-docs": "^2.0.0",
     "bedrock-event-log": "^2.0.0",
-    "bedrock-mongodb": "^3.0.0",
+    "bedrock-mongodb": "3.x - 5.x",
     "bedrock-passport": "^3.0.0",
     "bedrock-permission": "^2.0.0",
     "bedrock-rest": "^2.0.0",
